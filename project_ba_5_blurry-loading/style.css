@@ -1,0 +1,35 @@
+/* CSS Styling */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700&display=swap');
+:root{
+    --bgcolor: #e0e0e0;
+    --blurvalue: 30px
+}
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+.bg{
+    background: url("https://images.pexels.com/photos/3311574/pexels-photo-3311574.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: -1;
+    filter: blur(var(blurvalue));
+    background-repeat: no-repeat;
+}
+.loading{
+    font-size: 50px;
+    color: darkslategray;
+}
